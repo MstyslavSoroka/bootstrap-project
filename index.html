@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Project</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="logo" width="50" /> Rugby Store
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor02"
+            aria-controls="navbarColor02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Products</a
+                >
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#boots">Boots</a>
+                  <a class="dropdown-item" href="#balls">Balls</a>
+                  <a class="dropdown-item" href="#shirts">Shirts</a>
+                </div>
+              </li>
+            </ul>
+            <button
+              class="btn btn-secondary my-2 my-sm-0"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Sign in
+            </button>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                      Sign in
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="p-4 p-md-5 rounded-3 text-light">
+                      <div class="form-floating mb-3">
+                        <input
+                          type="email"
+                          class="form-control bg-secondary text-light border-0"
+                          id="floatingInput"
+                          placeholder="name@example.com"
+                        />
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input
+                          type="password"
+                          class="form-control bg-secondary text-light border-0"
+                          id="floatingPassword"
+                          placeholder="Password"
+                        />
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                      <div class="checkbox mb-3">
+                        <label>
+                          <input type="checkbox" value="remember-me" /> Remember
+                          me
+                        </label>
+                      </div>
+                      <button
+                        class="w-100 btn btn-lg btn-primary"
+                        type="submit"
+                      >
+                        Sign up
+                      </button>
+                      <hr class="my-4 text-light" />
+                      <small class="text-light-50"
+                        >By clicking Sign up, you agree to the terms of
+                        use.</small
+                      >
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-dark text-light py-5">
+      <section class="hero">
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+          <div class="row align-items-center g-lg-5 py-5">
+            <div class="text-center">
+              <h1 class="display-4 fw-bold lh-1 mb-3 text-center">
+                Welcome to our <br />rugby store
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product container my-4">
+        <div class="row g-4" id="boots">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="/img/boots.png" class="card-img-top" alt="product" />
+              <div class="card-body">
+                <h5 class="card-title">Boots</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magni officia architecto, quae eum dolorem provident iste
+                  repellat quidem beatae fugiat.
+                </p>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="/img/boots.png" class="card-img-top" alt="product" />
+              <div class="card-body">
+                <h5 class="card-title">Boots</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magni officia architecto, quae eum dolorem provident iste
+                  repellat quidem beatae fugiat.
+                </p>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="/img/boots.png" class="card-img-top" alt="product" />
+              <div class="card-body">
+                <h5 class="card-title">Boots</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magni officia architecto, quae eum dolorem provident iste
+                  repellat quidem beatae fugiat.
+                </p>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 pt-5" id="balls">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="/img/ball.png" class="card-img-top" alt="product" />
+              <div class="card-body">
+                <h5 class="card-title">Ball</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magni officia architecto, quae eum dolorem provident iste
+                  repellat quidem beatae fugiat.
+                </p>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="/img/ball.png" class="card-img-top" alt="product" />
+              <div class="card-body">
+                <h5 class="card-title">Ball</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magni officia architecto, quae eum dolorem provident iste
+                  repellat quidem beatae fugiat.
+                </p>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="/img/ball.png" class="card-img-top" alt="product" />
+              <div class="card-body">
+                <h5 class="card-title">Ball</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magni officia architecto, quae eum dolorem provident iste
+                  repellat quidem beatae fugiat.
+                </p>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 pt-5" id="shirts">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="/img/shirt.png" class="card-img-top" alt="product" />
+              <div class="card-body">
+                <h5 class="card-title">Shirt</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magni officia architecto, quae eum dolorem provident iste
+                  repellat quidem beatae fugiat.
+                </p>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="/img/shirt.png" class="card-img-top" alt="product" />
+              <div class="card-body">
+                <h5 class="card-title">Shirt</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magni officia architecto, quae eum dolorem provident iste
+                  repellat quidem beatae fugiat.
+                </p>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="/img/shirt.png" class="card-img-top" alt="product" />
+              <div class="card-body">
+                <h5 class="card-title">Shirt</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magni officia architecto, quae eum dolorem provident iste
+                  repellat quidem beatae fugiat.
+                </p>
+                <a href="#" class="btn btn-primary">Buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-light py-4">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <div class="mb-3 mb-md-0">
+          <a class="navbar-brand text-light" href="#">
+            <img src="img/logo.png" alt="logo" width="40" class="me-2" />
+            Rugby Store
+          </a>
+        </div>
+        <ul class="nav mb-3 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#boots">Boots</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#balls">Balls</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#shirts">Shirts</a>
+          </li>
+        </ul>
+        <p class="mb-0 text-muted">
+          &copy; 2025 Rugby Store. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
